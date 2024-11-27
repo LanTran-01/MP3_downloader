@@ -6,7 +6,7 @@ def mp3_convert(link):
     yt = YouTube(link,on_progress_callback = on_progress)
     print(yt.title)
     ys = yt.streams.get_audio_only()
-    ys.download(output_path= "downloads",mp3 = True)
+    ys.download(output_path= "",mp3 = True)
 
 def count_lines(filename):
     with open(filename,'r') as file:
