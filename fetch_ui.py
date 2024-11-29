@@ -4,7 +4,6 @@ import pyperclip  # To handle clipboard text
 
 
 def capture_ui():
-    time.sleep(2)
     pyautogui.hotkey('ctrl', 'l')  
     time.sleep(0.5)
     pyautogui.hotkey('ctrl', 'c')  
