@@ -2,6 +2,7 @@ from pytubefix import YouTube
 from pytubefix.cli import on_progress
 
 
+
 def mp3_convert(link):
     yt = YouTube(link,on_progress_callback = on_progress)
     print(yt.title)
@@ -16,9 +17,7 @@ def count_lines(filename):
 
 def main():
     filename = 'paste_links_here.txt'
-
     file = open(filename)
-
     for i in range(count_lines(filename)):
         mp3_convert(file.readline())
     file.close()
